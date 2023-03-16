@@ -53,7 +53,6 @@ func main() {
 // Exercise 1.2: Modify the echo program to print the index and value of each of its arguments, one per line.
 
 func main() {
-	// fmt.Println(strings.Join(os.Args[:], " "))
 	for i, arg := range os.Args[1:] {
 		fmt.Println(i, arg)
 	}
