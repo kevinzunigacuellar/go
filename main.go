@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
+import "fmt"
 
 /*
 	version 1
@@ -48,7 +45,7 @@ func main() {
 	fmt.Println(strings.Join(os.Args[:], " "))
 }
 
-*/
+
 
 // Exercise 1.2: Modify the echo program to print the index and value of each of its arguments, one per line.
 
@@ -59,3 +56,32 @@ func main() {
 }
 
 // TODO: Exercise 1.3 (page 8)
+
+*/
+
+// func main() {
+// 	counts := make(map[string]int)
+// 	input := bufio.NewScanner(os.Stdin)
+// 	for input.Scan() {
+// 		counts[input.Text()]++
+// 	}
+
+// 	for line, n := range counts {
+// 		if n > 1 {
+// 			fmt.Printf("%d\t%s\n", n, line)
+// 		}
+// 	}
+// }
+
+func main() {
+	fruits := []string{}
+	fruits = append(fruits, "apple")
+	fruits = append(fruits, "banana")
+	fruits = append(fruits, "orange")
+	// fmt.Println(fruits)
+
+	for i, fruit := range fruits {
+		fmt.Println(i, fruit)
+	}
+
+}
